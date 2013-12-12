@@ -1,0 +1,15 @@
+extend layout
+
+block head
+    h1 Event list
+block content
+    div(id="content")
+
+        h2 These are your #{events.length} events:
+        - each item in events
+            p Id: #{item.event.id}
+            p Name: #{item.event.name}
+            p Deadline: #{item.event.deadline}
+            p Status: #{item.event.status}
+            p URL: #{item.event.url}
+            hr
