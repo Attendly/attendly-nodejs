@@ -1,0 +1,14 @@
+extend layout
+
+block head
+    h1 Log in to Attendly
+block content
+    div(id="content")
+        p Enter your login details:
+         form(action="http://localhost:8888/login", method="post")
+            p Username:
+                input(type="text", name="username")
+            p Password:
+                input(type="password", name="password");
+            p
+                input(type="submit", value="OK")
